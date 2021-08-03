@@ -1,0 +1,21 @@
+.sliders-container {
+  display: flex;
+  justify-content: center;
+  & > * {
+    margin: 20px;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+
+    &:hover {
+      color: white;
+      border-radius: 10px;
+      background-color: green;
+    }
+  }
+  .active {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+  }
+}
