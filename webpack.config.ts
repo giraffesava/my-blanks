@@ -8,6 +8,7 @@ const webpackConfig = (env): Configuration => ({
   entry: './src/index.tsx',
   devServer: {
     stats: 'errors-only',
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -16,6 +17,7 @@ const webpackConfig = (env): Configuration => ({
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'build.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -26,6 +28,10 @@ const webpackConfig = (env): Configuration => ({
           transpileOnly: true,
         },
         exclude: /dist/,
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
       { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
     ],
