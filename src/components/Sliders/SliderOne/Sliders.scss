@@ -44,16 +44,19 @@
       pointer-events: none;
     }
   }
+
   .prev {
     top: 50%;
     left: 20px;
     transform: translateY(-60%);
   }
+
   .next {
     top: 50%;
     right: 20px;
     transform: translateY(-60%);
   }
+
   .container-dots {
     position: absolute;
     bottom: 10px;
@@ -61,6 +64,7 @@
     transform: translateX(-50%);
     display: flex;
   }
+
   .dot {
     width: 20px;
     height: 20px;
@@ -68,6 +72,7 @@
     border: 3px solid #f1f1f1;
     margin: 0 5px;
     background: #f1f1f1;
+
     &.active {
       background: rgb(32, 32, 32);
     }
