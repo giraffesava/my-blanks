@@ -42,7 +42,7 @@ const SliderTwo: React.FC = () => {
       <div className="slider">
         <div ref={sliderRef} className="pictures">
           {pictureArray.map((item) => (
-            <img src={item} alt="images"></img>
+            <img src={item} alt="images" key={uuidv4}></img>
           ))}
         </div>
         <button className="leftBtn" onClick={goLeftHandler}>
