@@ -48,7 +48,7 @@ const DragAndDrop: React.FC = () => {
   }
 
   return (
-    <div className="app">
+    <div className="app-drag-drop">
       {cardList.sort(sortCard).map((card) => {
         return (
           <div
