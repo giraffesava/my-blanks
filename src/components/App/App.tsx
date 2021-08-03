@@ -8,6 +8,7 @@ import {
   Switch,
 } from 'react-router-dom'
 import Sliders from '../Sliders/Sliders'
+import DragAndDrop from 'components/DragAndDrop/DragAndDrop'
 
 const App: React.FC = () => {
   return (
@@ -25,7 +26,9 @@ const App: React.FC = () => {
           <Route path="/" exact>
             This is my own outlines
           </Route>
-          <Route path="/drag_and_drop">In progress...</Route>
+          <Route path="/drag_and_drop">
+            <DragAndDrop />
+          </Route>
         </Switch>
       </div>
     </Router>
