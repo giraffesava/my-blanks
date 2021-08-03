@@ -7,7 +7,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom'
-import Sliders from '../Sliders/SliderOne/SliderOne'
+import Sliders from '../Sliders/Sliders'
 
 const App: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import rightArrow from './assets/right-arrow.svg'
-import leftArrow from './assets/left-arrow.svg'
+import rightArrow from './../assets/right-arrow.svg'
+import leftArrow from './../assets/left-arrow.svg'
 import './Sliders.scss'
 
 interface Props {
