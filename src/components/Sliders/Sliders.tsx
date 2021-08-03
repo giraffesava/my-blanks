@@ -13,7 +13,6 @@ import {
 
 const Sliders = () => {
   const location = useLocation()
-  console.log(location.pathname)
   return (
     <Router>
       <div className="sliders-container">
