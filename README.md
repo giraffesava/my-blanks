@@ -1,1 +1,3 @@
-# my-template
+# just my outlines
+
+# просто мои наброски
