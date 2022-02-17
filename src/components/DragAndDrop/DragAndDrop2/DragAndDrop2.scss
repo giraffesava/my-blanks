@@ -1,0 +1,50 @@
+.drag-and-drop {
+  border: 1px dashed #565d73;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 600px;
+  margin: 0 auto;
+  height: 110px;
+
+  &__downloaded {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    button {
+      width: 100px;
+      display: inline-block;
+      border: 0;
+      margin: 0 auto;
+      background-color: red;
+      border-radius: 43px;
+      color: white;
+      font-size: 25px;
+    }
+  }
+
+  &__circle {
+    background: rgb(209, 209, 209);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 13px auto 12px;
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &__text {
+    margin: 0 auto 13px;
+    width: 148px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--drag-and-drop-text-color);
+    &--highlight {
+      color: #55a0e6;
+    }
+  }
+}

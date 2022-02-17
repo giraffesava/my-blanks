@@ -26,7 +26,7 @@ const Sliders = () => {
         <NavLink
           to="/sliders/slider-two"
           className={
-            location.pathname === '/sliders/slider-one2' ? 'active' : null
+            location.pathname === '/sliders/slider-two' ? 'active' : null
           }>
           Slider 2
         </NavLink>

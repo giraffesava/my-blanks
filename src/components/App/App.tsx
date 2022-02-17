@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <div className="links">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/sliders">Sliders</NavLink>
-          <NavLink to="/drag_and_drop">Drag and Drop</NavLink>
+          <NavLink to="/drag-and-drop">Drag and Drop</NavLink>
         </div>
         <Switch>
           <Route path="/sliders">
@@ -26,7 +26,7 @@ const App: React.FC = () => {
           <Route path="/" exact>
             This is my own outlines
           </Route>
-          <Route path="/drag_and_drop">
+          <Route path="/drag-and-drop">
             <DragAndDrop />
           </Route>
         </Switch>
